@@ -30,6 +30,12 @@
           p = document.createElement('p');
           words.appendChild(p);
         }
+        if (transcript.includes('honey')) {
+          console.log('🐝🐝🐝🐝🐝🐝🐝');
+        }
+        if (transcript.includes('clear')) {
+          words.textContent = '';
+        }
         console.log(transcript);
       });
       recognition.addEventListener('end', recognition.start);
